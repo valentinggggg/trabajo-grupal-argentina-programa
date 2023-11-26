@@ -4,6 +4,7 @@ import Inicio from './components/Inicio'
 import SobreNos from './components/SobreNos'
 import Contact from './components/Contact'
 import Combis from './components/Combis'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <SobreNos />
       <Combis />
       <Contact />
+      <Footer />
     </>
   )
 }
