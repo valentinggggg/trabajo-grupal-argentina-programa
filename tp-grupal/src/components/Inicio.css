@@ -1,0 +1,61 @@
+.contenedorBanner {
+     width: 100%;
+     height: 25em;
+     background-image: url('./imagenes/banner.png');
+     background-repeat: no-repeat;
+     background-size: cover;
+}
+
+.banner {
+     height: 100%;
+     width: 100%;
+     background-color: #303030a4;
+     margin: auto;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+
+.ofertas {
+     padding: 4em 2em 2em 2em;
+     height: auto;
+     background-color: #fafafa;
+}
+
+
+.viajes {
+     height: 100%;
+     width: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+.tarjetas {
+     display: flex;
+     padding-top: 5em;
+     width: 100%;
+     justify-content: center;
+}
+
+.card {
+     margin: 0 30px 0 30px;
+     max-height: 30em;
+}
+
+.card figure {
+     height: 70%;
+     width: 100%;
+}
+
+.card figure img{
+     height: 100%;
+     width: 100%;
+     object-fit: fill;
+}
+
+.titulo {
+     text-shadow: 4px 14px 20px rgba(0,0,0,0.31);
+}
