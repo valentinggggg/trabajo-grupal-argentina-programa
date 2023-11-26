@@ -1,10 +1,11 @@
-
 import './App.css'
+import NavBar from './components/NavBar'
 
 function App() {
   return (
     <>
-<div>CombisRapidas</div>
+      <NavBar />
+      <h1 className='text-3xl font-bold underline'>Hola</h1>
     </>
   )
 }
