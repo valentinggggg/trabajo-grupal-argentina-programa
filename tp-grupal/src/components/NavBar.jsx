@@ -8,13 +8,13 @@ import { IoIosMenu } from "react-icons/io";
 
 
 export default function NavBar() {
-     const [activado, setActivado] = useState('menu');
+     const [activado, setActivado] = useState('navMenu');
 
      const mostrarNav = () => {
-          setActivado('menu mostrarNavBar');
+          setActivado('navMenu mostrarNavBar');
      }
      const ocultarNav = () => {
-          setActivado('menu');
+          setActivado('navMenu');
      }
 
      return (
@@ -25,9 +25,9 @@ export default function NavBar() {
 
                <div className={activado}>
                     <ul className="menuList">
-                         <li  className='menuItem'><a href="#">Inicio</a></li>
-                         <li  className='menuItem'><a href="#">Sobre nosotros</a></li>
-                         <li  className='menuItem'><a href="#">Combis</a></li>
+                         <li onClick={ocultarNav} className='menuItem'><a href="#">Inicio</a></li>
+                         <li onClick={ocultarNav} className='menuItem'><a href="#">Sobre nosotros</a></li>
+                         <li onClick={ocultarNav} className='menuItem'><a href="#">Combis</a></li>
                     </ul>
                </div>
 
@@ -35,12 +35,10 @@ export default function NavBar() {
                     <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
                          Contacto
                     </button>
-
-
                     <IoIosMenu onClick={mostrarNav} className='menuHamburguesa'/>
                </div>
-               
           </nav>
+
      )
 }
 

@@ -1,7 +1,7 @@
 import Card from './Card'
 import imgJujuy from './imagenes/salinasjujuy.jpg'
 import imgLaEstrella from './imagenes/laestrella.png'
-import imgSelvaMisionera from './imagenes/selvamisionera.jpg'
+import imgSelvaMisionera from './imagenes/selvamisionera.png'
 import imgParqueNacional from './imagenes/parquenacional.png'
 
 class Destino {
