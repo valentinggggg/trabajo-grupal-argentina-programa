@@ -1,0 +1,52 @@
+.contacto {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #04679c;
+    padding-top: 2rem;
+}
+
+.form-contacto {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 70%;
+    min-width: 300px;
+    height: 500px;
+}
+
+.form-contacto input {
+    background-color: white;
+    color: #101010;
+    border-radius: 5px;
+    width: 48%;
+    height: 30px;
+}
+
+.form-contacto input[type="submit"] {
+    cursor:pointer;
+}
+
+.form-contacto textarea {
+    background-color: white;
+    color: #101010;
+    border-radius: 5px;
+    height: 80%;
+    width: 100%;
+}
+
+#botonEnvio {
+    background-color: transparent;
+    color: #fafafa;
+    border: solid 1px #fafafa;
+    transition: .5s all ease-in;
+    margin-top: 1.5em;
+}
+
+#botonEnvio:hover {
+    background-color: #fafafa;
+    color: #033
+}
+

@@ -100,10 +100,18 @@
 .mostrarNavBar {
      transition: .5s ease-in;
      display: block;
-     right: 50%;
-     left: 20%;
+     position: fixed;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
      animation: aparecer 1s ease-out;
+     box-shadow: 0 0 50px 60vw rgba(0, 0, 0, 0.6);
 }
+
+.mostrar {
+     display: block;
+     animation: aparecer 1s ease-out forwards; 
+ }
 
 @keyframes aparecer {
      from {

@@ -11,7 +11,7 @@ export default function NavBar() {
      const [activado, setActivado] = useState('navMenu');
 
      const mostrarNav = () => {
-          setActivado('navMenu mostrarNavBar');
+          setActivado('navMenu mostrarNavBar mostrar');
      }
      const ocultarNav = () => {
           setActivado('navMenu');
@@ -26,15 +26,15 @@ export default function NavBar() {
                <div className={activado}>
                     <ul className="menuList">
                          <li onClick={ocultarNav} className='menuItem'><a href="#">Inicio</a></li>
-                         <li onClick={ocultarNav} className='menuItem'><a href="#">Sobre nosotros</a></li>
-                         <li onClick={ocultarNav} className='menuItem'><a href="#">Combis</a></li>
+                         <li onClick={ocultarNav} className='menuItem'><a href="#sobreNosotros">Sobre nosotros</a></li>
+                         <li onClick={ocultarNav} className='menuItem'><a href="#combis">Paquetes</a></li>
                     </ul>
                </div>
 
                <div className='contenedorBoton'>
-                    <button className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
+                    <a href="#contacto" className="btn btn-xs sm:btn-sm md:btn-md lg:btn-lg">
                          Contacto
-                    </button>
+                    </a>
                     <IoIosMenu onClick={mostrarNav} className='menuHamburguesa'/>
                </div>
           </nav>

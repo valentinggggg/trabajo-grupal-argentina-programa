@@ -1,0 +1,84 @@
+.combis {
+     display: flex;
+     min-height: 100vh;
+     background-color: #fafafa;
+     width: 100%
+}
+
+.colIz {
+     height: auto;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     padding: 2em;
+     display: flex;
+     flex-direction: column;
+     width: 50%
+}
+
+.columnaDer {
+     width: 50%;
+     min-height: 100vh;
+     background-image: url('./imagenes/COMBIAVENT3.png');
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center;
+}
+
+.contenedorImagen {
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100%;
+     background-color: rgba(48, 48, 48, 0.788);
+}
+
+.descripcion {
+     color: #303030;
+}
+
+.transporte {
+     padding: 4em;
+     height: 15em;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+}
+
+@media screen and (max-width: 710px) {
+     .transporte h1 {
+          width: 100%;
+          font-size: 2rem;
+     }
+     .combis {
+          height: auto;
+     }
+}
+
+@media screen and (max-width: 1100px) {
+     .combis {
+          flex-direction: column;
+          height: auto;
+     }
+     .colIz {
+          width: 100%;
+          text-align: center;
+     }
+     .columnaDer {
+          height: 30vh;
+          width: 100%;
+     }
+     .transporte {
+          height: auto;
+     }
+
+     .contenedorImagen {
+          height: 100%;
+          padding: 2em;
+     }
+     .contenedorImagen h3 {
+          font-size: 1.5em;
+          width: 100%;
+     }
+}
